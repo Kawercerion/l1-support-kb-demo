@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Микро-БЗ для первой линии технической поддержки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Кнопка меню для мобильных устройств -->
+  <button type="button" class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+    ☰
+  </button>
+
+  <div class="layout">
+    <!-- Боковая навигация (на десктопе всегда видна) -->
+    <aside class="sidebar" id="sidebar">
+      <header class="sidebar-header">
+        <h1 class="site-title">Микро-БЗ для первой линии технической поддержки</h1>
+        <p class="site-subtitle">Анонимизированный портфолио-проект: клиентские инструкции, внутренние чек-листы, макросы, шаблоны для тикетов и правила эскалации.</p>
+      </header>
+
+      <!-- Поле поиска по статьям -->
+      <div class="search-box">
+        <label for="searchInput" class="visually-hidden">Поиск</label>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Поиск: заголовок, теги, тип, аудитория…"
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Разделы сайта — id совпадают с полем section в данных статей (script.js) -->
+      <nav class="sidebar-nav" id="sidebarNav" aria-label="Разделы">
+        <ul>
+          <li><a href="#home" data-section="home" class="nav-link active">Главная</a></li>
+          <li><a href="#client-instructions" data-section="client-instructions" class="nav-link">Клиентские инструкции</a></li>
+          <li><a href="#checklists" data-section="checklists" class="nav-link">Внутренние чек-листы L1</a></li>
+          <li><a href="#macros" data-section="macros" class="nav-link">Макросы и шаблоны</a></li>
+          <li><a href="#escalations" data-section="escalations" class="nav-link">Эскалации</a></li>
+          <li><a href="#training" data-section="training" class="nav-link">Обучение новичка</a></li>
+          <li><a href="#kb-architecture" data-section="kb-architecture" class="nav-link">Архитектура БЗ</a></li>
+          <li><a href="#about" data-section="about" class="nav-link">О проекте</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Основная область контента -->
+    <main class="content" id="mainContent">
+      <!-- Контент генерируется JavaScript (функция render в script.js) -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

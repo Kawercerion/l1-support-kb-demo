@@ -1,0 +1,9 @@
+des/
+.qwen/
+*.zip
+*.pdf
+*.docx
+*.txt
+node_modules/
+.DS_Store
+Thumbs.db
